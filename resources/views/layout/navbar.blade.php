@@ -1,10 +1,11 @@
-<nav id="navbar" class="">
+<nav>
     <h1>NFL Shop</h1>
     <ul>
         @guest
             <li><a href="{{ url('/') }}">Home</a></li>
             <li><a href="{{ url('product') }}">Product</a></li>
             <li><a href="{{ url('login') }}"><strong>Login</strong></a></li>
+            <li><a href="{{ url('register') }}"><strong>Register</strong></a></li>
         @endguest
         @auth
             <li><a href="{{ url('/') }}">Home</a></li>

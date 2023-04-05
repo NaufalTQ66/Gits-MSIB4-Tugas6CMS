@@ -2,9 +2,6 @@
 
 @section('content')
     <div class="main-content">
-        <div>
-            <img src="{{ asset('assets/images/nfllogo3.png') }}" width="150" alt="Logo">
-        </div>
         <h1>Edit Category</h1>
 
         @if ($errors->any())
