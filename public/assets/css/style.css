@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/assets/images/greybg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding-bottom: 100px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*========== NAVBAR ==========*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 10px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #454545;
+}
+
+/*========== CONTENT ==========*/
+.main-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.main-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.main-content p {
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+/*========== CARD ==========*/
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+.card {
+  background-color: #f8f8f8;
+  border: 2.5px solid black;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+}
+
+.card img {
+  margin-bottom: 10px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.card a {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none; 
+}
+    
+.card a:hover {
+  background-color: #454545;
+  color: white;
+  cursor: pointer;
+}
+
+.card table {
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.card th {
+  padding: 15px 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
+/*========== DETAIL CARD ==========*/
+.detail-card {
+  background-color: #f8f8f8;
+  border: 2.5px solid black;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.detail-card img {
+  margin-bottom: 10px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.detail-card table {
+  border-collapse: collapse;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.detail-card form {
+  display: flex;
+  align-items: center;
+}
+
+.detail-card form input[type="text"] {
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.detail-card form button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.detail-card button:hover {
+  background-color: #454545;
+  color: white;
+  cursor: pointer;
+}
+
+/*========== CHECKOUT ==========*/
+.card a {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none; 
+}
+    
+.card a:hover {
+  background-color: #454545;
+  color: white;
+  cursor: pointer;
+}
+
+/*========== LOGIN and REGISTER ==========*/
+.main-content .login p {
+  font-size: 15px;
+}
+
+.login form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 2.5px solid black;
+  border-radius: 5px;
+}
+
+.login form h1 {
+  margin-top: 0;
+}
+
+.login form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.login form input[type="text"],
+.login form input[type="email"],
+.login form input[type="password"] {
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.login form button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none; 
+}
+
+.login form button:hover {
+  background-color: #454545;
+  color: white;
+  cursor: pointer;
+}
+
+/*========== CREATE ==========*/
+.main-content .create p {
+  font-size: 15px;
+}
+
+.create form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 2.5px solid black;
+  border-radius: 5px;
+}
+
+.create form h1 {
+  margin-top: 0;
+}
+
+.create form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.create form input[type="text"] {
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.create form button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none; 
+}
+
+.create form button:hover {
+  background-color: #454545;
+  color: white;
+  cursor: pointer;
+}
+
+.create select {
+  font-family: 'Raleway', sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 16px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.create select:hover, select:focus {
+  border-color: #999;
+}
+
+/*========== PRODUCT and CATEGORY ==========*/
+.product {
+  padding-bottom: 25px;
+}
+
+.product a {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  align-self: flex-end;
+  text-decoration: none;
+}
+    
+.product a:hover {
+  background-color: #454545;
+  color: white;
+  cursor: pointer;
+}
+
+.product-table table {
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.product-table th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+
+.product-table th {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.product-table td {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid black;
+}
+
+.product-table form a {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none; 
+}
+    
+.product-table form a:hover {
+  background-color: #454545;
+  color: white;
+  cursor: pointer;
+}
+
+.product-table form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-table form button {
+  font-family: 'Raleway', sans-serif;
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none; 
+}
+
+.product-table form button:hover {
+  background-color: #454545;
+  color: white;
+  cursor: pointer;
+}
+
+/*========== FOOTER ==========*/
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*========== RESPONSIVE ==========*/
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav li {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    nav li:first-child {
+        border-top: 1px solid white;
+    }
+
+    nav li:last-child {
+        border-bottom: 1px solid white;
+    }
+
+    nav li a {
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}
+
+/*========== RESPONSIVE COLUMN ==========*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
